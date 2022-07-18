@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Icon fontawesome --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Link CSS Bootstrap 5  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CDN SWIPER -->
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <title>Travel Australia</title>
+</head>
+<body>
+    
+    <!-- Header Section -->
+    <header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo"><span>T</span>raveler</a>
+
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#books">Book</a>
+        <a href="#packages">Packages</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fa fa-search" id="search-btn"></i>
+        <i class="fa fa-user" id="login-btn"></i>
+    </div>
+    
+    <form action="" class="search-bar-container">
+        <input type="text" id="search-bar" placeholder="Search here..">
+        <label for="search-bar" class="fa fa-search"></label>
+    </form>
+
+    
+</header>
+<!-- Section Home Starts  -->
+<section class="home" id="home">
+    <div class="content">
+        <h3>Let's <span>Adventure</span></h3>
+        <p>Discover new places with us, Enjoy your moment</p>
+        <a href="#" class="btn">Discover More</a>
+    </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="videos/video (1).mp4"></span>
+            <span class="vid-btn" data-src="videos/video (2).mp4"></span>
+        </div>
+    
+        <div class="video-container">
+            <video src="videos/video (1).mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+        
+    </section>
+    <!-- End Home Starts  -->
+    
+
+    <!-- Book Section Start -->
+    <section class="book" id="books">
+        <h1 class="heading">
+            Book Now
+        </h1>
+        
+        <div class="row">
+            <form action="">
+                <div class="inputBox">
+                    <h3>Where To</h3>
+                    <input type="text" placeholder="place name">
+                </div>
+                <div class="inputBox">
+                    <h3>How Many</h3>
+                    <input type="number" placeholder="number of guests">
+                </div>
+                <div class="inputBox">
+                    <h3>Arrivals</h3>
+                    <input type="date" placeholder="place arrivals">
+                </div>
+                <div class="inputBox">
+                    <h3>Leaving</h3>
+                    <input type="date" placeholder="place leaving">
+                </div>
+                <input type="submit" class="btn" value="Book Now">
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Section Packages -->
+    <section class="packages" id="packages">
+        <h1 class="heading">
+            Packages
+        </h1>
+        <div class="box-container">
+            <!-- Card Box -->
+            <div class="box">
+                <img src="images/sydney small.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Sydney</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, cumque.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="price">$90.00 <span>$120.00</span></div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <!-- End Card Box -->
+            <!-- Card Box -->
+            <div class="box">
+                <img src="images/canberra.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Canberra</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, cumque.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="price">$60.00 <span>$100.00</span></div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <!-- End Card Box -->
+            <!-- Card Box -->
+            <div class="box">
+                <img src="images/barrier-reef.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Great Barier Reef</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, cumque.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$100.00 <span>$150.00</span></div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <!-- End Card Box -->
+            <!-- Card Box -->
+            <div class="box">
+                <img src="images/melbourne.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Melbourne</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, cumque.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="price">$90.00 <span>$120.00</span></div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <!-- End Card Box -->
+            <!-- Card Box -->
+            <div class="box">
+                <img src="images/national-park.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> National Park</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, cumque.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="price">$90.00 <span>$120.00</span></div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <!-- End Card Box -->
+            <!-- Card Box -->
+            <div class="box">
+                <img src="images/tasmania.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Tasmania</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, cumque.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$90.00 <span>$120.00</span></div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <!-- End Card Box -->
+        </div>
+    </section>
+    <!-- End Section Packages -->
+
+
+    <!-- Section Services -->
+    <section class="services" id="services">
+        <h1 class="heading">
+            Services
+        </h1>
+        <div class="box-container">
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>Affordable Hotels</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat provident quo minima voluptas error maxime.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe"></i>
+            <h3>Around The World</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat provident quo minima voluptas error maxime.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>Best Transportation</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat provident quo minima voluptas error maxime.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-person"></i>
+            <h3>Experienced Guide</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat provident quo minima voluptas error maxime.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>Travel Guarantee</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat provident quo minima voluptas error maxime.</p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-user-shield"></i>
+            <h3>Free Health Insurance</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat provident quo minima voluptas error maxime.</p>
+        </div>
+        </div>
+    </section>
+    <!-- Section Services -->
+
+    <!-- gallery section -->
+    <section class="gallery" id="gallery">
+        <h3 class="heading">
+            Gallery
+        </h3>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/sydney small.jpg" alt="">
+                <div class="content">
+                    <h3>Popular Place</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat maxime similique consequatur reprehenderit veniam eveniet!</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/barrier-reef.jpg" alt="">
+                <div class="content">
+                    <h3>Beautiful Scenery </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat maxime similique consequatur reprehenderit veniam eveniet!</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/melbourne.jpg" alt="">
+                <div class="content">
+                    <h3>Best Place</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat maxime similique consequatur reprehenderit veniam eveniet!</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/national-park.jpg" alt="">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat maxime similique consequatur reprehenderit veniam eveniet!</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/tasmania.jpg" alt="">
+                <div class="content">
+                    <h3>Amazing Beach</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat maxime similique consequatur reprehenderit veniam eveniet!</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/sydney small.jpg" alt="">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat maxime similique consequatur reprehenderit veniam eveniet!</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- </section> -->
+    <!-- Section Review -->
+    <section class="review" >
+        <h1 class="heading">Review</h1>
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/man-p (1).jpg" alt="">
+                        <h3>John Steve</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis perspiciatis expedita est tenetur, explicabo pariatur eos natus repellendus dolore ipsum!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/man-p (2).jpg" alt="">
+                        <h3>John Steve</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis perspiciatis expedita est tenetur, explicabo pariatur eos natus repellendus dolore ipsum!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/woman-p (1).jpg" alt="">
+                        <h3>John Steve</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis perspiciatis expedita est tenetur, explicabo pariatur eos natus repellendus dolore ipsum!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    <!-- End Section Review -->
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">
+            Contact Us
+        </h2>
+        <div class="row">
+                <img src="images/clip-destination-point-1.png" alt="">
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="number">
+                    <input type="text" placeholder="subject">
+                </div>
+                <textarea name=" id="" cols="30" rows="10" placeholder="message" ></textarea>
+                <input type="submit" class="btn">
+            </form>
+        </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Brand Section -->
+    <section class="brand-container">
+        <div class="swiper brand-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/brand (1).png" alt=""></div>
+                <div class="swiper-slide"><img src="images/brand (2).png" alt=""></div>
+                <div class="swiper-slide"><img src="images/brand (3).png" alt=""></div>
+                <div class="swiper-slide"><img src="images/brand (4).png" alt=""></div>
+                <div class="swiper-slide"><img src="images/brand (5).png" alt=""></div>
+                
+                
+            </div>
+        </div>
+    </section>
+    <!-- End Brand Section -->
+
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+        
+        <form action="">
+            <h3>Login</h3>
+            <input type="email" class="box" placeholder="enter your email">
+            <input type="password" class="box" placeholder="enter your password">
+            <input type="submit" value="Login Now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember Me</label>
+            <p>Forget password? <a href="#">Click Here</a></p>
+            <p>Dont have and account? <a href="#">Register Now</a></p>
+        </form>
+    </div>
+    
+            <!-- Footer Section -->
+            <footer>
+                <div class="footer-container">
+                    <div class="kotak">
+                        <h3>About Us</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, maiores ut nesciunt dolorum impedit necessitatibus.
+                        </p>
+                    </div>
+                    <div class="kotak">
+                        <h3>Branch Location</h3>
+                        <a href="#">Australia</a>
+                        <a href="#">USA</a>
+                        <a href="#">UK</a>
+                        <a href="#">Japan</a>
+                        <a href="#">Indonesia</a>
+                        <a href="#">Singapore</a>
+                    </div>
+                    <div class="kotak">
+                        <h3>Follow Us</h3>
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Github</a>
+                        <a href="#">Linkedin</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="bottom-footer">
+                    <h1 class="credit">Created by <span>Dimas Permana </span>All Right Reserved 2022</h1>
+                </div>
+            </footer>
+
+    <!-- Script JS and Swiper JS -->
+    <script src="main.js"></script>
+    <!-- Script Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Script Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".review-slider", {
+                spaceBetween:20,
+                loop: true,
+
+                
+                autoplay:{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                breakpoints:{
+                    640:{
+                        slidesPerView: 1,
+
+                    },
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView:3,
+                    },
+                },
+            });
+        </script>
+        <script>
+            var swiper = new Swiper(".brand-slider", {
+                spaceBetween:20,
+                loop: true,
+
+                
+                autoplay:{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                breakpoints:{
+                    450:{
+                        slidesPerView: 1,
+                    },
+                    640:{
+                        slidesPerView: 2,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                    },
+                    1024: {
+                        slidesPerView:4,
+                    },
+                },
+            });
+        </script>
+</body>
+</html>
